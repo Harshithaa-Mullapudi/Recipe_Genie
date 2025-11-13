@@ -61,7 +61,6 @@ The app will also include AI-powered recipe generation based on random ingredien
 
 ## 👥 Contributors
 
-A huge thank you to everyone who contributed to building **Recipe Genie** ✨
 
 | Name | GitHub Profile | Role |
 |------|----------------|------|
