@@ -59,5 +59,13 @@ The app will also include AI-powered recipe generation based on random ingredien
 
 ---
 
-## 📁 Project Structure
+## 👥 Contributors
 
+A huge thank you to everyone who contributed to building **Recipe Genie** ✨
+
+| Name | GitHub Profile | Role |
+|------|----------------|------|
+| **Harshitha Mullapudi** | [Harshithaa-Mullapudi](https://github.com/Harshithaa-Mullapudi) | Developer |
+| **Afeefa Banu** | – | Developer |
+
+If you would like to contribute to the project, feel free to open issues or submit pull requests!
