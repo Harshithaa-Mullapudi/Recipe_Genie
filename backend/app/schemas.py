@@ -16,3 +16,19 @@ class UserOut(BaseModel):
 
     class Config:
         orm_mode = True
+
+class RecipeCreate(BaseModel):
+    title: str
+    ingredients: str
+    instructions: str
+
+
+
+class RecipeOut(BaseModel):
+    id: int
+    title: str
+    ingredients: str
+    instructions: str
+
+    class Config:
+        orm_mode = True
