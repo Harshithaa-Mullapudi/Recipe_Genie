@@ -1,1 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recipe Genie | Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 
+<body>
+
+<div class="home-container">
+
+    <h2 id="welcomeText">Welcome!</h2>
+
+    <p class="subtitle">Your personal recipe assistant ✨</p>
+
+    <div class="home-buttons">
+
+        <button onclick="gotoAddRecipe()" class="btn home-btn">
+            ➕ Add Recipe
+        </button>
+
+        <button onclick="gotoViewRecipes()" class="btn home-btn">
+            📖 View Recipes
+        </button>
+
+        <button class="btn" onclick="window.location.href='ai.html'">AI Recipe Generator ✨</button>
+
+        <button onclick="logout()" class="btn logout-btn">
+            🚪 Logout
+        </button>
+
+    </div>
+
+</div>
+
+<script src="home.js"></script>
+</body>
+</html>
