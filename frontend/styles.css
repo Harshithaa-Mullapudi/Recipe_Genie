@@ -1,0 +1,193 @@
+
+/* ===== Page Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #f8f5ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* ===== Auth Card ===== */
+.auth-container {
+    width: 380px;
+    padding: 35px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 5px;
+    color: #472183;
+    font-size: 28px;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: grey;
+    margin-bottom: 20px;
+}
+
+/* ===== Form ===== */
+.auth-form input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background: #fafafa;
+    transition: 0.3s ease;
+}
+
+.auth-form input:focus {
+    border-color: #7b39d1;
+    background: #fff;
+}
+
+/* ===== Buttons ===== */
+.btn {
+    width: 100%;
+    padding: 12px;
+    background: #7b39d1;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background: #5a22a8;
+}
+
+/* ===== Messages ===== */
+.message {
+    margin-top: 10px;
+    font-size: 14px;
+    min-height: 20px;
+}
+
+/* ===== Switch Login/Signup ===== */
+.switch {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.switch a {
+    color: #7b39d1;
+    text-decoration: none;
+    font-weight: bold;
+}
+.switch a:hover {
+    text-decoration: underline;
+}
+
+
+/* ===== Home Page ===== */
+
+.home-container {
+    width: 450px;
+    padding: 35px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.home-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.home-btn {
+    font-size: 17px;
+}
+
+.logout-btn {
+    background: #e63946;
+}
+
+.logout-btn:hover {
+    background: #c71d2a;
+}
+
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background: #fafafa;
+    resize: none;
+}
+
+textarea:focus {
+    border-color: #7b39d1;
+    background: #fff;
+}
+
+/* ===== Recipes Page ===== */
+
+.recipes-container {
+    width: 700px;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+.recipe-list {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.recipe-card {
+    padding: 15px;
+    border-radius: 12px;
+    background: #faf8ff;
+    border: 1px solid #e2d8f7;
+}
+
+.recipe-card h3 {
+    margin-bottom: 8px;
+    color: #5b2dbf;
+}
+
+.recipe-card p {
+    margin: 4px 0;
+}
+
+
+
+.container textarea {
+    width: 100%;
+    height: 120px;
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #d0c3f0;
+    font-size: 15px;
+}
+
+.result-box {
+    margin-top: 20px;
+    padding: 20px;
+    background: #f8f5ff;
+    border-radius: 12px;
+    border: 1px solid #e3d9ff;
+}

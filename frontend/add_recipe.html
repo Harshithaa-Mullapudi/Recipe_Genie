@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Recipe | Recipe Genie</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div class="auth-container">
+
+    <h2>Add a New Recipe 🍳</h2>
+    <p class="subtitle">Share your creativity!</p>
+
+    <form id="recipeForm" class="auth-form">
+
+        <input type="text" id="title" placeholder="Recipe Title" required>
+
+        <textarea id="ingredients" placeholder="Ingredients (one per line)" rows="4" required></textarea>
+
+        <textarea id="instructions" placeholder="Instructions" rows="5" required></textarea>
+
+        <button type="submit" class="btn">Submit Recipe</button>
+
+        <p id="msg" class="message"></p>
+
+        <p class="switch">
+            ← <a href="index.html">Back to Home</a>
+        </p>
+    </form>
+
+</div>
+
+<script src="add_recipe.js"></script>
+</body>
+</html>
