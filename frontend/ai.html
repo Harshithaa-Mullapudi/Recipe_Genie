@@ -1,26 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>AI Recipe Genie</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <title>AI Recipe Genie</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="api.js"></script>
 </head>
 <body>
+  <header class="topbar smallbar">
+    <a href="home.html" class="muted">← Home</a>
+    <div class="app-title">AI Recipe Genie</div>
+    <div></div>
+  </header>
 
-    <div class="container">
-        <h1>AI Recipe Genie 🧞‍♂️</h1>
-        <p>Enter random ingredients & let AI create a recipe!</p>
-
-        <textarea id="ingredients" placeholder="tomato, cheese, pasta"></textarea>
-
-        <button id="generateBtn">Generate Recipe</button>
-
-        <h2>✨ Your AI-Generated Recipe</h2>
-        <pre id="output"></pre>
-
-        <a href="index.html">← Back to Home</a>
+  <main class="container">
+    <div class="card form-card">
+      <label class="small muted">Enter ingredients (comma separated)</label>
+      <input id="aiIngredients" placeholder="tomato, cheese, pasta" />
+      <button id="generateBtn" class="btn primary">Generate Recipe</button>
     </div>
 
-    <script src="ai.js"></script>
+    <div class="card" id="aiResultCard" style="display:none;">
+      <h3>✨ Your AI-Generated Recipe</h3>
+      <pre id="aiResult" class="ai-output"></pre>
+      <button id="saveAiBtn" class="btn ghost">Save as Recipe</button>
+    </div>
+  </main>
+
+  <script src="js/app.js"></script>
+  <script src="js/ai.js"></script>
 </body>
 </html>
