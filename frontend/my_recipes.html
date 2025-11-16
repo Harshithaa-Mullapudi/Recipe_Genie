@@ -1,16 +1,24 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-    <title>My Recipes</title>
-    <link rel="stylesheet" href="dashboard.css">
+  <meta charset="utf-8">
+  <title>My Recipes — Recipe Genie</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="api.js"></script>
+
 </head>
 <body>
+  <header class="topbar smallbar">
+    <a href="home.html" class="muted">← Home</a>
+    <div class="app-title">My Recipes</div>
+    <div></div>
+  </header>
 
-<h1 style="text-align:center;">My Recipes</h1>
+  <main class="container">
+    <section id="myRecipes" class="cards-grid"></section>
+  </main>
 
-<div id="recipesContainer" class="recipe-grid"></div>
-
-<script src="my_recipes.js"></script>
-
+  <script src="js/app.js"></script>
+  <script src="js/my_recipes.js"></script>
 </body>
 </html>
