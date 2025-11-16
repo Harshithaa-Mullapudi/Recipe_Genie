@@ -1,26 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Your Recipes | Recipe Genie</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-
-<div class="recipes-container">
-
-    <h2>Your Recipes 📖</h2>
-    <p class="subtitle">All your saved creations</p>
-
-    <div id="recipesList" class="recipe-list">
-        <!-- Recipe cards inserted by JS -->
+<!doctype html><html><head><meta charset="utf-8"><title>View Recipe</title><link rel="stylesheet" href="css/style.css"></head><body>
+  <div class="navbar">
+    <div class="nav-left">
+      <div class="logo"><img src="assets/logo.png" alt="logo" style="height:100%"></div>
+      <div class="app-title">Recipe Genie</div>
     </div>
+    <div class="nav-right">
+      <button class="btn" onclick="location.href='home.html'">Home</button>
+    </div>
+  </div>
 
-    <button class="btn" onclick="goHome()">← Back to Home</button>
+  <div class="container">
+    <div id="recipe-detail"></div>
+  </div>
 
-</div>
-
-<script src="recipes.js"></script>
-</body>
-</html>
+<script src="js/api.js"></script>
+<script src="js/recipes.js"></script>
+</body></html>

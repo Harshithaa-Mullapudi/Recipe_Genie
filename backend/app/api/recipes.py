@@ -33,3 +33,48 @@ def list_recipes(db: Session = Depends(get_db), user=Depends(get_current_user)):
     recipes = db.query(Recipe).filter(Recipe.user_id == user.id).all()
 
     return recipes
+
+@router.put("/update/{recipe_id}")
+def update_recipe(
+    recipe_id: int,
+    updated_data: RecipeCreate,
+    db: Session = Depends(get_db),
+    user=Depends(get_current_user)
+):
+    recipe = db.query(Recipe).filter(Recipe.id == recipe_id).first()
+
+    if not recipe:
+        raise HTTPException(status_code=404, detail="Recipe not found")
+
+    # Only owner can edit
+    if recipe.user_id != user.id:
+        raise HTTPException(status_code=403, detail="Not allowed")
+
+    # Update fields
+    recipe.title = updated_data.title
+    recipe.ingredients = updated_data.ingredients
+    recipe.instructions = updated_data.instructions
+
+    db.commit()
+    db.refresh(recipe)
+
+    return {"message": "Recipe updated successfully", "recipe": recipe}
+
+@router.delete("/delete/{recipe_id}")
+def delete_recipe(
+    recipe_id: int,
+    db: Session = Depends(get_db),
+    user=Depends(get_current_user)
+):
+    recipe = db.query(Recipe).filter(Recipe.id == recipe_id).first()
+
+    if not recipe:
+        raise HTTPException(status_code=404, detail="Recipe not found")
+
+    if recipe.user_id != user.id:
+        raise HTTPException(status_code=403, detail="Not allowed")
+
+    db.delete(recipe)
+    db.commit()
+
+    return {"message": "Recipe deleted successfully"}

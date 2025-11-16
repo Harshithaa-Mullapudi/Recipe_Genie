@@ -1,37 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Add Recipe | Recipe Genie</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <title>Add Recipe — Recipe Genie</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="api.js"></script>
 </head>
-
 <body>
+  <header class="topbar smallbar">
+    <a href="home.html" class="muted">← Home</a>
+    <div class="app-title">Add Recipe</div>
+    <div></div>
+  </header>
 
-<div class="auth-container">
+  <main class="container">
+    <div class="card form-card">
+      <input id="title" placeholder="Title" />
+      <textarea id="ingredients" placeholder="Ingredients (comma separated)"></textarea>
+      <textarea id="instructions" placeholder="Instructions"></textarea>
+      <button id="addBtn" class="btn primary">Add Recipe</button>
+    </div>
+  </main>
 
-    <h2>Add a New Recipe 🍳</h2>
-    <p class="subtitle">Share your creativity!</p>
-
-    <form id="recipeForm" class="auth-form">
-
-        <input type="text" id="title" placeholder="Recipe Title" required>
-
-        <textarea id="ingredients" placeholder="Ingredients (one per line)" rows="4" required></textarea>
-
-        <textarea id="instructions" placeholder="Instructions" rows="5" required></textarea>
-
-        <button type="submit" class="btn">Submit Recipe</button>
-
-        <p id="msg" class="message"></p>
-
-        <p class="switch">
-            ← <a href="index.html">Back to Home</a>
-        </p>
-    </form>
-
-</div>
-
-<script src="add_recipe.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/add_recipe.js"></script>
 </body>
 </html>
